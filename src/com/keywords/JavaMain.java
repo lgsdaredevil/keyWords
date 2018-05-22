@@ -16,8 +16,11 @@ public class JavaMain {
         javaPublic.publicTest();
         JavaPrivate javaPrivate = new JavaPrivate();
         javaPrivate.getPrivate();
-        Child father = new Child();
-        father.childTest();
+        Child child = new Child();
+        child.childTest();
+        // 父类对象引用子类不可以调用父类的protected方法
+        Father father = new Child();
+        father.fatherTest();
     }
 
 }

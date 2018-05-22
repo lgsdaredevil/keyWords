@@ -10,4 +10,13 @@ public class Father {
         System.out.print("this is father's protected method!\n");
     }
 
+    private void privateFather(){
+        System.out.print("this is father's private method!\n");
+    }
+
+    public void fatherTest(){
+        this.privateFather();
+        this.protectedTest();
+    }
+
 }
